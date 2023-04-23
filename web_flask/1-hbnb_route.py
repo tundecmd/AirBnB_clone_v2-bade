@@ -22,6 +22,6 @@ def hbnb():
     """ A view function that returns the text 'HBNB' """
     return ("HBNB")
 
-# Run the application if this script is executed directly
+""" Run the application if this script is executed directly """
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)

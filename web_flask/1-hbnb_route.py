@@ -12,14 +12,12 @@ from flask import Flask
 app = Flask(__name__)
 
 
-""" Defines a route for the URL of the application """
 @app.route('/', strict_slashes=False)
 def hello_hbnb():
     """ A view functions that returns a greeting message """
     return ("Hello HBNB!")
 
 
-""" Defines a route for the URL of the """
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
     """ A view function that returns the text 'HBNB' """

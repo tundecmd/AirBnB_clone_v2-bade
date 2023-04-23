@@ -4,6 +4,7 @@ A script that starts a Flask web app on
 0.0.0.0 and port 5000
 Routes:
     / - display "Hello HBNB!"
+    /hbnb - display "HBNB"
 """
 from flask import Flask
 

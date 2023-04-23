@@ -14,7 +14,7 @@ app = Flask(__name__)
 @app.route('/', strict_slashes=False)
 def hello_hbnb():
     """ A view functions that returns a greeting message """
-    return "Hello HBNB!"
+    return ("Hello HBNB!")
 
 
 """ Run the application if this script is executed directly """

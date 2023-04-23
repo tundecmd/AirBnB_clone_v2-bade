@@ -16,6 +16,7 @@ def hello_hbnb():
     """ A view functions that returns a greeting message """
     return "Hello HBNB!"
 
+
 # Run the application if this script is executed directly
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)

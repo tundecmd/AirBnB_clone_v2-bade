@@ -10,7 +10,6 @@ from flask import Flask
 """ Create a new Flask web application instance """
 app = Flask(__name__)
 
-""" Defines a route for the URL of the application """
 @app.route('/', strict_slashes=False)
 def hello_hbnb():
     """ A view functions that returns a greeting message """

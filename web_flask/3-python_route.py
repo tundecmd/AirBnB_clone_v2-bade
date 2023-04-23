@@ -41,7 +41,7 @@ def Python_is_cool(text='is cool'):
     followed by the value of the text variable
     (default is "is cool").
     """
-    return "Python {}".format(escape(text).replace('_', ' '))
+    return "Python {}".format(text.replace('_', ' '))
 
 
 """ Run the application if this script is executed directly """

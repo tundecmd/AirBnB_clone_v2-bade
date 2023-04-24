@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" A script starts a Flask web application """
+"""
+A script that starts a Flask web application
+"""
 
 from flask import Flask, render_template
 from models import storage
@@ -9,7 +11,7 @@ app = Flask(__name__)
 
 
 @app.route('/states_list', strict_slashes=False)
-def states_list():
+def get_states():
     """ Displays a HTML page of all State objects in storage """
     states = sorted(storage.all("State").values(), key=lambda x: x.name)
     return render_template('7-states_list.html', states=states)
@@ -19,3 +21,7 @@ def states_list():
 def teardown(self):
     """tear down session"""
     storage.close()
+
+
+if __name == '__main__':
+    app.run(host='0.0.0.0', port=5000)
